@@ -1,14 +1,10 @@
 #include "main.h"
 
 /**
-* main - prints _putchar using ascii
-*
-* Return: always 0 (denoting success in this instance)
+* print_alphabet - prints alphabet using _putchar
 */
 
-void print_alphabet(void);
-
-int main(void)
+void print_alphabet(void)
 {
 	char lc = 'a';
 
@@ -19,5 +15,4 @@ int main(void)
 	}
 
 	_putchar('\n');
-	return (0);
 }
