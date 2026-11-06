@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_diagonal - print a diagonal line of \
+* print_diagonal - print a diagonal line created through sequential backslashes
 * @n: input as integer to determine length of diagonal
 */
 
