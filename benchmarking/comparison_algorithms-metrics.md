@@ -1,0 +1,1 @@
+Implementation A is 99.99 times slower than B
