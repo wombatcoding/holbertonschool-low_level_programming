@@ -51,7 +51,16 @@ int main(void)
             }
             else if (*menu == 4) /* Division */
             {
-                printf("Placeholder text for Divide function\n\n");
+                printf("\nPlease enter the first value:\n\n");
+                scanf("%d", &inputA);
+                printf("\nPlease enter the second value:\n\n");
+                scanf("%d", &inputB);
+                if (inputA == 0 || inputB == 0)
+                {
+                    printf("\nError: division by zero\n");
+                }
+                else
+                printf("\n%d divided by %d is equal to %d\n\n", inputA, inputB, (inputA / inputB));
             }
             else if (*menu == 0) /* Exit */
             {
@@ -61,6 +70,7 @@ int main(void)
             else /* Invalid */
             {
                 printf("Invalid choice\n\n");
+                break;
             }
     } while (*menu != 0);
     printf("\n\n");
