@@ -43,7 +43,11 @@ int main(void)
             }
             else if (*menu == 3) /* Multiplication */
             {
-                printf("Placeholder text for Multiple function\n\n");
+                printf("\nPlease enter the first value:\n\n");
+                scanf("%d", &inputA);
+                printf("\nPlease enter the second value:\n\n");
+                scanf("%d", &inputB);
+                printf("\n%d times %d is equal to %d\n\n", inputA, inputB, (inputA * inputB));
             }
             else if (*menu == 4) /* Division */
             {
