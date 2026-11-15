@@ -27,15 +27,19 @@ int main(void)
         scanf("%d", menu);
             if (*menu == 1) /* Addition */
             {
-                printf("\nPlease enter the first value\n\n");
+                printf("\nPlease enter the first value:\n\n");
                 scanf("%d", &inputA);
-                printf("\nPlease enter the second value\n\n");
+                printf("\nPlease enter the second value:\n\n");
                 scanf("%d", &inputB);
                 printf("\n%d added to %d is equal to %d\n\n", inputA, inputB, (inputA + inputB));
             }
             else if (*menu == 2) /* Subtraction */
             {
-                printf("Placeholder text for Subtract function\n\n");
+                printf("\nPlease enter the first value:\n\n");
+                scanf("%d", &inputA);
+                printf("\nPlease enter the second value:\n\n");
+                scanf("%d", &inputB);
+                printf("\n%d minus %d is equal to %d\n\n", inputA, inputB, (inputA - inputB));
             }
             else if (*menu == 3) /* Multiplication */
             {
