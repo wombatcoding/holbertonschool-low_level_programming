@@ -5,7 +5,7 @@ Compile command with exact flags:
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 calculator.c -o calculator
 
 Run instructions:
-Run ./calculator in a terminal. Or just run. In the direction of away.
+Run ./calculator in a terminal. Or just run. In any direction of away.
 
 Supported operations:
 Multiplication
@@ -14,9 +14,11 @@ Addition
 Subtraction
 
 Numeric behavior (integer vs decimal)
-My int therapist: numbers can't hurt you.
-This past week: hold my beer float.
+Due to time constraints I kept to integer variables for this task.
+Given more time and understanding I would choose the double data type for increased precision.
 
 Known limitations:
-There is a known end point to precision in C for both 'int' and 'double' data types.
-An unhealthy amount of sass for a serious project.
+Reduced mathematic precision based on chosen data type.
+While the calculator rejects most invalid input, it doesn't solve for a mixed input.
+For example: 1337haxxor would only return 1337, retain haxxor, try again with haxxor,
+resulting in another invalid response message before prompting for a new input.
