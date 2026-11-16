@@ -12,26 +12,16 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *catstr;
-	int count1;
-	int count2;
-	int slen1;
-	int slen2;
-	int copy;
-
-	count1 = 0;
-	count2 = 0;
-	copy = 0;
+	int count1, count2, copy = 0;
 
 	if (s1 == NULL)
 	{
 		s1 = "";
 	}
-
 	if (s2 == NULL)
 	{
 		s2 = "";
 	}
-
 	while (s1[count1] != '\0')
 	{
 		count1++;
@@ -41,26 +31,21 @@ char *str_concat(char *s1, char *s2)
 		count2++;
 	}
 
-	slen1 = count1;
-	slen2 = count2;
-	catstr = malloc((slen1 + slen2 + 1) * sizeof(char));
+	catstr = malloc((count1 + count2 + 1) * sizeof(char));
 
 	if (catstr == NULL)
 	{
 		return (NULL);
 	}
-
-	while (copy < slen1)
+	while (copy < count1)
 	{
 		catstr[copy] = s1[copy];
 		copy++;
 	}
-
 	copy = 0;
-
-	while (copy <= slen2)
+	while (copy <= count2)
 	{
-		catstr[slen1 + copy] = s2[copy];
+		catstr[count1 + copy] = s2[copy];
 		copy++;
 	}
 
