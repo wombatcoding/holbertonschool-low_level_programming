@@ -3,6 +3,7 @@
 
 /**
 * free_grid - frees the memory of alloc-grid
+* @grid: grid
 * @height: number of rows
 */
 
